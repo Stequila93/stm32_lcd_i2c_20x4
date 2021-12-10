@@ -68,7 +68,6 @@ void lcd_setCursor(uint8_t col, uint8_t row){
 
 void lcd_clear(){
 	lcd_sendCommand(0b00000001);
-	HAL_Delay(1);
 }
 
 void lcd_printChar(char character){
